@@ -1,0 +1,58 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-image:url('https://s3.envato.com/files/226837079/Preview%20Set/10.jpg')
+  
+  
+
+}
+
+.white-box { 
+width: 500px; height: 250px; margin-top: 250px; margin-left: auto; margin-right: auto;   
+  
+background: rgba(255,255,255,0.9);
+padding: 30px;
+-webkit-box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+-moz-box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+-ms-border-radius: 5px;
+-o-border-radius: 5px;
+border-radius: 5px;
+
+}
+.card {
+  background: #fff;
+  border-radius: 2px;
+  display: inline-block;
+  height: fit-content;
+  margin: 1rem;
+  position: absolute;
+  background-position-x: 500;
+  width: fit-content;
+  text-align: center;
+}
+.card:after { 
+  content: "\00a0 ","\00a0 ","\00a0 ","\00a0 ";
+  
+
+ }
+.card-1 {
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.card-1:hover {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+.main {
+  text-align: center;
+  
+  background-color: #47627B;
+  color:azure;
+}
+.text {
+  background-color: rgb(0, 247, 255);
+  opacity: 0.5;
+  color:azure;
+}

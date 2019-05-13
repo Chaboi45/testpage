@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css"/>
+  </head>
+  
+  
+  <body>
+    
+    <h1 class="main">Welcome</h1>
+    <p class="text">Hi, I'm Chaboi_3000. As you can notice, this is my site! PSST. It's under construction so it's probably very LOW quality.</p>
+    <div class="card">
+      <h1><u>Bio</u></h1>
+      <p>You <i>probably</i> came here because you checked my discourse profile. Anyways, since you came all the way here to see my profile, why not introduce myself? I'm currently moderating codecombat discourse, and also contributing to discourse's new features, as well as create custom themes and components for users in discourse. It's <b>FUN</b> stuff! Anyways, I'm #CODING4LIFE, and I'm also willing to help anyone with code problems including C# and HTML5. You might be wondering... <i>What do I do?</i>. I do code, but not to the point that my life depends on it. It's only for leisure(and for fun), because who knows...Maybe coding will be the new essense for the new era of genetic modifications and neuroengineering! </p>
+    </div>
+    <div class="white-box">
+      <kbd id="demo"></kbd>
+      <button onclick="typeWriter()">Click me</button>
+    </div>
+    <link rel="stylesheet" href="lib/codemirror.css">
+    <script src="lib/codemirror.js"></script>
+    <script>
+      
+      
+        var myCodeMirror = CodeMirror(document.body, {
+  value: "function myScript(){return 100;}\n",
+  mode:  "javascript"
+});
+        var editor = CodeMirror.fromTextArea(myTextarea, {
+          lineNumbers: true
+        });
+        
+      </script>
+      <script>
+      var i = 0;
+      var txt = 'Lorem ipsum typing effect!'; /* The text */
+      var speed = 50; /* The speed/duration of the effect in milliseconds */
+
+      function typeWriter() {
+        if (i < txt.length) {
+          document.getElementById("demo").innerHTML += txt.charAt(i);
+          i++;
+          setTimeout(typeWriter, speed);
+        }
+      }
+    </script>
+    
+  </body>
+</html>
